@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (TempData.Peek("StatusMessage") != null)
+{
+    <div class="alert alert-info alert-dismissible">@TempData["StatusMessage"]</div>
+}
+
+@if (TempData.Peek("TempDataProperty-StatusMessage") != null)
+{
+    <div class="alert alert-info alert-dismissible">@TempData["TempDataProperty-StatusMessage"]</div>
+}
+

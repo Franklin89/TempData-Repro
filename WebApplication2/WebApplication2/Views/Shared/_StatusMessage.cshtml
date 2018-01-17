@@ -1,0 +1,4 @@
+﻿@if (TempData.Peek("StatusMessage") != null)
+{
+    <div class="alert alert-info alert-dismissible">@TempData["StatusMessage"]</div>
+}
